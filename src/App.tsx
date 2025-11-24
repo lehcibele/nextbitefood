@@ -1,16 +1,17 @@
-import Hero from "./components/landing_page/hero"
-import SectionMaoNaMassa from "./components/landing_page/sectionMaoNaMassa"
-import SectionRestaurant from "./components/landing_page/sectionRestaurant"
-import SectionServices from "./components/landing_page/sectionServices"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./pages/home"
+import SignIn from "./pages/sign-in"
+import MyCart from "./pages/myCart"
 
 function App() {
   return (
-    <main className="bg-gray-50">
-      <Hero />
-      <SectionServices />
-      <SectionRestaurant />
-      <SectionMaoNaMassa />
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} /> 
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/mycart" element={<MyCart />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

@@ -1,6 +1,6 @@
 import { assets } from "@/assets/assets";
-import Header from "../commons/header";
 import ButtonCustom from "../commons/ButtonCustom";
+import Header from "../commons/Header";
 
 export default function Hero() {
     return (
@@ -12,12 +12,16 @@ export default function Hero() {
             <Header />
             
             <div className="absolute left-[10%] h-full flex flex-col justify-center">
-                <p className="text-6xl text-white font-light tracking-[1px] max-w-2xl mb-10">
+                <p className="text-6xl text-white font-light tracking-[1px] max-w-2xl mb-10 max-md:text-4xl">
                     O Futuro da sua proxima refeição.
                     1º app do Brasil que te ajuda a escolher o que comer.
                 </p>
 
-                <ButtonCustom title="Baixar o app" color="bg-green-600" custom="w-[200px] rounded-md elevation-2 " />
+                <ButtonCustom 
+                    title="Baixar o app" 
+                    color="bg-green-600" 
+                    custom="w-[200px] rounded-md elevation-2 " 
+                />
             </div>
 
         </section>
